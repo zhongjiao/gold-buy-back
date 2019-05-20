@@ -1,7 +1,9 @@
 import NTHeader from './nt-header.vue'
+import NtWeaknetPage from './nt-weak-net-page.vue'
 
 const components = {
-  NTHeader
+  NTHeader,
+  NtWeaknetPage
 }
 
 const install = function(Vue, opt = {}) {

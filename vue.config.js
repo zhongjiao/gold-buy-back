@@ -23,18 +23,32 @@ const entries = () => {
   return entryArr
 }
 
+const isTest = process.env.VUE_APP_TITLE === 'test'
+
 module.exports = {
-  // baseUrl:
-  // process.env.NODE_ENV === 'production' ? 'https://www.mycdn.com/' : '/',
   lintOnSave: process.env.NODE_ENV !== 'production',
-  productionSourceMap: process.env.npm_lifecycle_event.indexOf('map') > 0,
+  productionSourceMap: isTest,
   parallel: require('os').cpus().length > 1,
   pages: entries(),
   assetsDir: 'assets',
+  publicPath: '/',
+
+  css: {
+    sourceMap: isTest
+  },
 
   devServer: {
     overlay: {
       errors: true
+    },
+    historyApiFallback: {
+      rewrites: [
+        { from: /\/orders$/, to: '/orders.html' },
+        {
+          from: /\/transfer$/,
+          to: '/transfer.html'
+        }
+      ]
     }
   },
 

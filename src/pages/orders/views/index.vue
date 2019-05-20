@@ -1,21 +1,21 @@
 <template>
   <div>
-    <NTHeader isBack title="订单查询" />
-    This is orders
-    <router-link to="test">go test</router-link>
+    <NTHeader isBack title="订单查询"/>
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'ordersIndex',
-  components: {
-  },
+  components: {},
   data() {
-    return {
+    return {}
+  },
+  methods: {
+    imgLoad() {
     }
-  }
+  },
+  mounted() {}
 }
 </script>
 

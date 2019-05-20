@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import store from '@/store/store'
 
 import index from '../views/index.vue'
-import test from '../views/test.vue'
+// import test from '../views/test.vue'
 
 Vue.use(Router)
 
@@ -27,15 +27,15 @@ const router = new Router({
         keepAlive: true
       },
       component: index
-    },
-    {
-      path: '/test',
-      name: 'test',
-      meta: {
-        keepAlive: true
-      },
-      component: test
     }
+    // {
+    //   path: '/test',
+    //   name: 'test',
+    //   meta: {
+    //     keepAlive: true
+    //   },
+    //   component: test
+    // }
   ]
 })
 

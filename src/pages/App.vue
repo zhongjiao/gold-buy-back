@@ -2,7 +2,7 @@
   <div id="app">
     <transition :name="slideName">
       <keep-alive :include="keepAliveComponents">
-        <router-view class="Router nt-Page darkftColor"/>
+        <router-view class="Router nt-Page backColor"/>
       </keep-alive>
     </transition>
   </div>
@@ -54,8 +54,8 @@ export default {
       }
     }
   }
-  .darkftColor {
-    color: #333;
+  .backColor {
+    background-color: @bodyBackColor;
   }
   .Router {
     transition: all 0.2s ease-in-out;

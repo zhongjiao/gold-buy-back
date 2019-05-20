@@ -12,6 +12,9 @@ require('@a/js/rem.js')
 Vue.config.productionTip = false
 Vue.use(_C)
 
+const attachFastClick = require('fastclick')
+attachFastClick.attach(document.body)
+
 new Vue({
   router,
   store,

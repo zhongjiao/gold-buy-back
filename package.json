@@ -3,15 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --mode build",
     "lint": "vue-cli-service lint",
-    "build:map": "vue-cli-service build",
+    "test": "vue-cli-service build --mode test",
     "dev": "vue-cli-service serve --open"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "better-scroll": "^1.15.2",
     "core-js": "^2.6.5",
+    "fastclick": "^1.0.6",
+    "lodash.debounce": "^4.0.8",
+    "lodash.throttle": "^4.1.1",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1",

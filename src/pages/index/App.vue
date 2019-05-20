@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     goHtml(name) {
-      window.location.href = `${name}.html`
+      window.location.href = `${name}`
     }
   }
 }
